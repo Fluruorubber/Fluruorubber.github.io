@@ -93,7 +93,7 @@
 <meta property="og:image" content="https://i.loli.net/2020/02/16/STNeRHQ3BfvbPOX.png">
 <meta property="og:image" content="https://i.loli.net/2020/02/16/QDuHfYV1mGS6EWr.png">
 <meta property="og:image" content="https://i.loli.net/2020/02/15/vzS49tU2lID8mkE.png">
-<meta property="og:updated_time" content="2020-02-16T15:29:58.741Z">
+<meta property="og:updated_time" content="2020-02-16T15:34:33.487Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="6_003(I)">
 <meta name="twitter:description" content="Notes of mit_ocw_6.003_Signals and Systems. Lec1-Lec6, including Discrete systems,Continuous systems, Z transform, Laplace tranform.">
@@ -425,7 +425,7 @@ y[n]=\begin{cases}p_0^n,& \text{if $n\geq0$;}\\0,&\text{otherwise.}\end{cases},H
 <p><strong>Complex poles:</strong><br>&emsp; Thinking about the difference equations, if the coefficients are real, even though the roots may be complex, the output is still <u>real</u>.<br>&emsp; <em>Note:</em> visualize the complex plane.</p>
 <p><strong>Summary:</strong><br>Systems composed of adders, gains, and delays can be characterized by their poles.<br>The poles of a system determine its fundamental modes.<br>The unit-sample response of a system can be expressed as a weighted sum of fundamental modes.</p>
 <h4 id="Z-tranform"><a href="#Z-tranform" class="headerlink" title="Z tranform"></a>Z tranform</h4><p>Replace $\mathcal{R}$ with $z^{-1}$.<br><strong>Def:</strong> (bilateral)</p>
-<script type="math/tex; mode=display">X(z)= \sum\limits_{-\infty}^{\infty}x[n]z^{-n}</script><p><strong>Region of Convergence (ROC)</strong><br>&emsp; <font color="#666699"><i>Note:</i> For z transform, always consider both the functional form and the region of convergence.</font><br><strong>Properties:</strong><br>&emsp; 1.Linearity<br>&emsp; 2.Delay property &emsp; $x[n-1]\leftrightarrow z^{-1}X(z) $ for $z$ in ROC.<br><strong>IMPORTANT :</strong><br>&emsp; right-sided signal $\rightarrow$ outside region<br>&emsp; IF inside region, solve the difference equation by iterating backwards in time.<br><img src="https://i.loli.net/2020/02/16/DATSi4UWeRYP7zm.png" alt="截屏2020-02-16下午10.20.42.png"><br><strong>Inverse transform:</strong><br>&emsp; Formally, $x[n]=\frac{1}{2\pi j}\int_CX(z)^{n-1}dz $<br>&emsp; Better ways: partial fractions; using $\mathcal{R}$,….</p>
+<script type="math/tex; mode=display">X(z)= \sum\limits_{-\infty}^{\infty}x[n]z^{-n}</script><p><strong>Region of Convergence (ROC)</strong><br>&emsp; <font color="#666699"><i>Note:</i> For z transform, always consider both the functional form and the region of convergence.</font><br><strong>Properties:</strong><br>&emsp; 1.Linearity<br>&emsp; 2.Delay property &emsp; $x[n-1]\leftrightarrow z^{-1}X(z) $ for $z$ in ROC.<br><strong>IMPORTANT :</strong><br>&emsp; right-sided signal $\rightarrow$ outside region<br>&emsp; IF inside region, solve the difference equation by iterating backwards in time.<br><img src="https://i.loli.net/2020/02/16/DATSi4UWeRYP7zm.png" alt="截屏2020-02-16下午10.20.42.png" style="zoom:67%;"><br><strong>Inverse transform:</strong><br>&emsp; Formally, $x[n]=\frac{1}{2\pi j}\int_CX(z)^{n-1}dz $<br>&emsp; Better ways: partial fractions; using $\mathcal{R}$,….</p>
 <hr>
 <h3 id="CT-Systems"><a href="#CT-Systems" class="headerlink" title="CT Systems"></a>CT Systems</h3><p><strong>Unit impulse:</strong><br>&emsp; Unit area but zero width. (represented by an arrow with  the number 1)<br><strong>Unit step:</strong><br>&emsp; $u(t)=\int_{-\infty}^{t}\delta(t)dt = 1 \ (\text{only when }t\geq 0) $<br><strong>Operator:</strong> $\mathcal{A}$, accumulator,  $Y=\mathcal{A}X$ means $y(t)=\int_{-\infty}^{t}x(t)dt$</p>
 <font color="#999cc">Fundamental operation: &emsp;Delays in DT are replaced by integrators in CT.</font> 
@@ -438,12 +438,12 @@ y[n]=\begin{cases}p_0^n,& \text{if $n\geq0$;}\\0,&\text{otherwise.}\end{cases},H
 \end{aligned}</script><p>converge: p<0; diverge: p>0;</0;></p>
 <h4 id="Laplace-tranform-CT"><a href="#Laplace-tranform-CT" class="headerlink" title="Laplace tranform (CT)"></a>Laplace tranform (CT)</h4><p><strong>Def:</strong> (bilateral)</p>
 <script type="math/tex; mode=display">X(s)=\int_{-\infty}^{\infty}x(t)e^{-st}dt</script><p><strong>ROC:</strong> Thinking about convergence, only thinking about the real part.<br>&emsp; &emsp; &emsp; $e^{pt}=e^{(\sigma+jw)t}= e^{\sigma t}(\cos wt+j\sin wt) $<br>&emsp; &emsp; &emsp; right-sided signal $\rightarrow$ right-sided region</p>
-<p><img src="https://i.loli.net/2020/02/16/uhV4pmaHMYnS3GC.png" alt="截屏2020-02-16下午11.19.45.png"></p>
+<p><img src="https://i.loli.net/2020/02/16/uhV4pmaHMYnS3GC.png" alt="截屏2020-02-16下午11.19.45.png" style="zoom:67%;"></p>
 <p><strong>Solving Differential equations with Laplace transform</strong>:<br>&emsp; Laplace transform of the derivative $\rightarrow$ s times the L-transform of the original function.</p>
 <script type="math/tex; mode=display">
 \mathcal{L}[\delta(t)]=X(s)=\int_{-\infty}^{\infty}\delta(t)e^{-st}dt=1</script><hr>
-<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p><img src="https://i.loli.net/2020/02/16/STNeRHQ3BfvbPOX.png" alt="截屏2020-02-16下午6.05.59.png" style="zoom:70%;"><br>Connections:</p>
-<p><img src="https://i.loli.net/2020/02/16/QDuHfYV1mGS6EWr.png" alt="截屏2020-02-16下午10.48.55.png"></p>
+<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p><img src="https://i.loli.net/2020/02/16/STNeRHQ3BfvbPOX.png" alt="截屏2020-02-16下午6.05.59.png" style="zoom: 67%;"><br>Connections:</p>
+<p><img src="https://i.loli.net/2020/02/16/QDuHfYV1mGS6EWr.png" alt="截屏2020-02-16下午10.48.55.png" style="zoom: 50%;"></p>
 <hr>
 <h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><blockquote>
 <p><strong>Ex3:</strong><br><img src="https://i.loli.net/2020/02/15/vzS49tU2lID8mkE.png" alt="2.png" style="zoom:67%;"></p>
