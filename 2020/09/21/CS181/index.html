@@ -88,7 +88,7 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://i.loli.net/2020/09/21/RCYa8kGP7LQJ9Ep.jpg">
 <meta property="og:image" content="https://i.loli.net/2020/09/21/AEbsrKMDwmBp1gi.png">
-<meta property="og:updated_time" content="2020-09-21T10:48:59.743Z">
+<meta property="og:updated_time" content="2020-09-21T11:04:49.381Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CS181">
 <meta name="twitter:description" content="CS181 Artificial Intelligence">
@@ -390,17 +390,13 @@
 <p>Trends: Three types of approaches will be integrated.</p>
 <hr>
 <h3 id="Search"><a href="#Search" class="headerlink" title="Search"></a>Search</h3><p><strong>Reflex Agents:</strong> consider how the world IS, decisions based on current percept(memory)<br><strong>Planning Agents:</strong> consider how the world WOULD BE, decisions based on consequences of actions</p>
-<p><strong>Search Problem:</strong><br>Def:</p>
-<pre><code>1. A state space
-2. A successor function
-3. Start / Goal state
-</code></pre><p>Methods:<br>    State space Graphs<br>    Search Trees<br>Properties:<br>    Complete? (find a solution if exists)<br>    Optimal? (find the least cost path)<br>    Time complexity<br>    Space complexity</p>
-<h4 id="Depth-first-Search-DFS"><a href="#Depth-first-Search-DFS" class="headerlink" title="Depth-first Search (DFS)"></a>Depth-first Search (DFS)</h4><p>strategy: expand a deepest node first<br>Stack: last in first out<br>Complete only if no circles.</p>
+<p><strong>Search Problem:</strong><br>Def:<br>&emsp; 1.A state space<br>&emsp; 2.A successor function<br>&emsp; 3.Start / Goal state<br>Methods:<br>&emsp; State space Graphs<br>&emsp; Search Trees<br>Properties:<br>&emsp; Complete? (find a solution if exists)<br>&emsp; Optimal? (find the least cost path)<br>&emsp; Time complexity<br>&emsp; Space complexity</p>
+<h4 id="Depth-first-Search-DFS"><a href="#Depth-first-Search-DFS" class="headerlink" title="Depth-first Search (DFS)"></a><font color="#4F86C6">Depth-first Search (DFS)</font></h4><p>strategy: expand a deepest node first<br>Stack: last in first out<br>Complete only if no circles.</p>
 <p><img src="https://i.loli.net/2020/09/21/RCYa8kGP7LQJ9Ep.jpg" alt="DFS.jpeg" style="zoom:50%;"></p>
-<h4 id="Breadth-first-Searc-BFS"><a href="#Breadth-first-Searc-BFS" class="headerlink" title="Breadth-first Searc (BFS)"></a>Breadth-first Searc (BFS)</h4><p>strategy: expand a shallowest node first<br>Queue: first in first out<br>Optimal only if all costs are 1, because it finds the shortest path.</p>
+<h4 id="Breadth-first-Searc-BFS"><a href="#Breadth-first-Searc-BFS" class="headerlink" title="Breadth-first Searc (BFS)"></a><font color="#4F86C6">Breadth-first Searc (BFS)</font></h4><p>strategy: expand a shallowest node first<br>Queue: first in first out<br>Optimal only if all costs are 1, because it finds the shortest path.</p>
 <p><img src="https://i.loli.net/2020/09/21/AEbsrKMDwmBp1gi.png" alt="截屏2020-09-21下午1.51.02.png" style="zoom:50%;"></p>
-<h4 id="Iterative-Deepening"><a href="#Iterative-Deepening" class="headerlink" title="Iterative Deepening"></a>Iterative Deepening</h4><p>DFS space + BFS time<br>strategy: run a DFS with depth limit 1, 2, 3…</p>
-<h4 id="Uniform-Cost-Search-UCS"><a href="#Uniform-Cost-Search-UCS" class="headerlink" title="Uniform Cost Search (UCS)"></a>Uniform Cost Search (UCS)</h4><p>strategy: expand the cheapest node first<br>Priority Queue (priority: cumulative cost)</p>
+<h4 id="Iterative-Deepening"><a href="#Iterative-Deepening" class="headerlink" title="Iterative Deepening"></a><font color="#4F86C6">Iterative Deepening</font></h4><p>DFS space + BFS time<br>strategy: run a DFS with depth limit 1, 2, 3…</p>
+<h4 id="Uniform-Cost-Search-UCS"><a href="#Uniform-Cost-Search-UCS" class="headerlink" title="Uniform Cost Search (UCS)"></a><font color="#4F86C6">Uniform Cost Search (UCS)</font></h4><p>strategy: expand the cheapest node first<br>Priority Queue (priority: cumulative cost)</p>
 <div class="table-container">
 <table>
 <thead>
@@ -442,12 +438,14 @@
 <td>$A^*$</td>
 <td>$\sqrt{}$</td>
 <td>x</td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 </div>
-<h4 id="Greedy-Search"><a href="#Greedy-Search" class="headerlink" title="Greedy Search"></a>Greedy Search</h4><p><strong>Heuristics $h$</strong>: estimate how close to a goal<br>    Example: Manhattan distance, Euclidean distance<br>strategy: expand the node that is “closest” to goal</p>
-<h4 id="AStar-Search"><a href="#AStar-Search" class="headerlink" title="AStar Search"></a>AStar Search</h4><p>UCS (g) + Greedy (h)<br>$f(n) = g(n) + (n)$</p>
+<h4 id="Greedy-Search"><a href="#Greedy-Search" class="headerlink" title="Greedy Search"></a><font color="#4F86C6">Greedy Search</font></h4><p><strong>Heuristics $h$</strong>: estimate how close to a goal<br>    Example: Manhattan distance, Euclidean distance<br>strategy: expand the node that is “closest” to goal</p>
+<h4 id="AStar-Search"><a href="#AStar-Search" class="headerlink" title="AStar Search"></a><font color="#4F86C6">AStar Search</font></h4><p>UCS (g) + Greedy (h)<br>$f(n) = g(n) + (n)$</p>
 <p><strong>Admissible Heuristics:</strong><br>A $h$ is admissible(optimistic) if: <script type="math/tex">0 \leq h(n) \leq h^{*}(n)</script><br>where $h^*(n)$ is the true cost to a nearest goal.</p>
 <p><strong>Optimality of A* search:</strong><br><strong>Assume:</strong>  $A$ is an optimal goal node,  $B$ is a suboptimal goal node, $h$ is admissible. Then $A$ will exit the fringe before $B$.</p>
 <blockquote>
@@ -458,11 +456,12 @@ f(n) = g(n) + h(n) \leq g(n) + h^*(n) = g(A) \\
 \therefore f(n) \leq g(A) < g(B) < f(B) \\
 \therefore f(n) \leq f(A) < f(B)</script><p>All ancestors of A expand before B, A expands before B, A* search is optimal. </p>
 </blockquote>
-<h4 id="Graph-Search"><a href="#Graph-Search" class="headerlink" title="Graph Search"></a>Graph Search</h4><p>Idea: never expand a state twice</p>
+<h4 id="Graph-Search"><a href="#Graph-Search" class="headerlink" title="Graph Search"></a><font color="#4F86C6">Graph Search</font></h4><p>Idea: never expand a state twice</p>
 <p>Method: tree search + closed set (set of expanded states)</p>
 <p><strong>Admissibility:</strong> heuristic cost $\leq$ actual cost to goal,  $h(A)\leq \text{cost(A to G)}$<br><strong>Consistency:</strong> heuristic arc cost $\leq$ actual cost for each arc,   $h(A) - h(C)\leq \text{cost(A to C)}$<br>Consistency example: manhattan, euclidean distance<br>Consistency implies admissibility.</p>
 <p>Optimal of A<em> Tree search: admissibility<br>Optimal of A</em> Graph search: consistency</p>
-
+<hr>
+<h3 id="Constraint-Satisfaction-Problems-CSP"><a href="#Constraint-Satisfaction-Problems-CSP" class="headerlink" title="Constraint Satisfaction Problems (CSP)"></a>Constraint Satisfaction Problems (CSP)</h3>
       
     </div>
     
@@ -628,7 +627,7 @@ f(n) = g(n) + h(n) \leq g(n) + h^*(n) = g(A) \\
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Search"><span class="nav-number">2.</span> <span class="nav-text">Search</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Depth-first-Search-DFS"><span class="nav-number">2.1.</span> <span class="nav-text">Depth-first Search (DFS)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Breadth-first-Searc-BFS"><span class="nav-number">2.2.</span> <span class="nav-text">Breadth-first Searc (BFS)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Iterative-Deepening"><span class="nav-number">2.3.</span> <span class="nav-text">Iterative Deepening</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Uniform-Cost-Search-UCS"><span class="nav-number">2.4.</span> <span class="nav-text">Uniform Cost Search (UCS)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Greedy-Search"><span class="nav-number">2.5.</span> <span class="nav-text">Greedy Search</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AStar-Search"><span class="nav-number">2.6.</span> <span class="nav-text">AStar Search</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Graph-Search"><span class="nav-number">2.7.</span> <span class="nav-text">Graph Search</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Search"><span class="nav-number">2.</span> <span class="nav-text">Search</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Depth-first-Search-DFS"><span class="nav-number">2.1.</span> <span class="nav-text">Depth-first Search (DFS)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Breadth-first-Searc-BFS"><span class="nav-number">2.2.</span> <span class="nav-text">Breadth-first Searc (BFS)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Iterative-Deepening"><span class="nav-number">2.3.</span> <span class="nav-text">Iterative Deepening</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Uniform-Cost-Search-UCS"><span class="nav-number">2.4.</span> <span class="nav-text">Uniform Cost Search (UCS)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Greedy-Search"><span class="nav-number">2.5.</span> <span class="nav-text">Greedy Search</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AStar-Search"><span class="nav-number">2.6.</span> <span class="nav-text">AStar Search</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Graph-Search"><span class="nav-number">2.7.</span> <span class="nav-text">Graph Search</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Constraint-Satisfaction-Problems-CSP"><span class="nav-number">3.</span> <span class="nav-text">Constraint Satisfaction Problems (CSP)</span></a></li></ol></div>
             
 
           </div>
