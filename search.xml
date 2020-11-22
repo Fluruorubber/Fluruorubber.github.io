@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>paper</title>
+    <url>/2020/11/21/paper/</url>
+    <content><![CDATA[<p>&emsp; Abstract: A 402-405 MHz MICS-band wake-up receiver is presented that achieves −63.8dBm sensitivity at 4.5nW. High sensitivity at 400MHz is accomplished via an 18.5dB passive voltage gain transformer filter loaded by a high input impedance ($R_{in} &gt; 30 k\Omega$), high <font color="red">scaling factor</font> ($k_{ED} &gt; 300$), 1.8 nW current re-use <font color="red">pseudo-balun envelope detector</font>, while low power is achieved by operating all active circuits, including the <font color="red">re-generative comparator, baseband correlator, and temperature compensated relaxation oscillator</font> in sub-threshold with a single 0.4 V supply. The chip is fabricated using 0.18 μm CMOS SOI process and achieves the highest figure of merit of all direct envelope detection-based wake-up receivers operating above 400 MHz.</p>
+<p>RF: Radio Frequency<br>MICS: Medical Implant Communication Systems, core band 402-405MHz<br>WuRXs: Wake-up Receivers</p>
+<h3 id="Comparison"><a href="#Comparison" class="headerlink" title="Comparison:"></a>Comparison:</h3><ul>
+<li>WuRXs at nW power level have been reported, however with moderate sensitivity.</li>
+<li>Prior work has achieved excellent sensitivity at nW power levels, however limited to 113.5MHz (low frequency).</li>
+<li>This paper presents the design of a WuRX featuring an active pseudo-balun ED. This new ED has higher input resistance, lower input capacitance, and higher conversion gain via a current re-use common gate (CG) architecture facilitating the design of a high passive gain RF transformer filter at 400 MHz.</li>
+</ul>
+<h3 id="Design-Description"><a href="#Design-Description" class="headerlink" title="Design Description"></a>Design Description</h3><p><img src="https://i.loli.net/2020/11/22/mEl4sNtoFd5MzUT.png" alt="Figure.1" style="zoom:67%;"></p>
+<h4 id="Transformer"><a href="#Transformer" class="headerlink" title="Transformer"></a>Transformer</h4><p>Primary and secondary stages resonate at the same center frequency, imdedance transformation, $\Rightarrow$ passive voltage gain<br>The passive voltage gain is limited by $L_s$(should large) and $R_{in}$(should small).</p>
+]]></content>
+      <categories>
+        <category>Paper</category>
+      </categories>
+  </entry>
+  <entry>
     <title>CS181</title>
     <url>/2020/09/21/CS181/</url>
     <content><![CDATA[<h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p><strong>Textbook:</strong> Artificial Intelligence: A modern Approach, Stuart Russell and Peter Nerving, 3rd Edition, 2009</p>
@@ -46,7 +63,7 @@
 <td>$\sqrt{}$</td>
 <td>x</td>
 <td>$O(b^s)$</td>
-<td>$O(b^m)$</td>
+<td>$O(b^s)$</td>
 <td>Queue</td>
 </tr>
 <tr>
@@ -104,6 +121,17 @@ O(d^n) \rightarrow O((\frac{n}{c})d^{c})</script><p>Time cost from expo to linea
 <p><strong>Minimax Pruning*</strong><br><img src="https://i.loli.net/2020/09/22/3y7GiU6PjZwueCV.jpg" alt="Minimax Pruning.jpeg"></p>
 <h4 id="Alpha-Beta-Pruning"><a href="#Alpha-Beta-Pruning" class="headerlink" title="Alpha-Beta Pruning"></a><font color="#4F86C6">Alpha-Beta Pruning</font></h4><p>Consider some node $n$ in the tree, if the player has better choice $m$ at the ancestor of node $n$, then $n$ will never be reached in actual play.<br><img src="https://i.loli.net/2020/09/22/2Ty7feC6YQXn5SP.png" alt="截屏2020-09-22上午11.13.31.png"></p>
 <p>$\alpha$ = highest value so far for MAX<br>$\beta$ = lowest value so far so MIN</p>
+<hr>
+<h3 id="Bayes-Nets-Exact-Inference"><a href="#Bayes-Nets-Exact-Inference" class="headerlink" title="Bayes Nets: Exact Inference"></a>Bayes Nets: Exact Inference</h3><h4 id="Inference-by-Enumeration"><a href="#Inference-by-Enumeration" class="headerlink" title="Inference by Enumeration"></a><font color="#4F86C6">Inference by Enumeration</font></h4><p><img src="https://i.loli.net/2020/10/23/VrkhDZwtIc31WKX.png" alt="bayes_graph1.png" style="zoom:50%;"></p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+P(B|j,m) &\propto_B P(B,j,m)\\
+& = \sum_{e,a}P(B,j,m,e,a) \\
+& = \sum_{e,a}P(B)P(e)P(a|B,e)P(j|a)P(m|a)\\
+& = P(B)\sum_{e}P(e)\sum_{a}P(a|B,e)P(j|a)P(m|a)
+\end{aligned}</script><h4 id="Factors"><a href="#Factors" class="headerlink" title="Factors"></a><font color="#4F86C6">Factors</font></h4><p>Factor: multi-dimensional array </p>
+<p>Join Factors: $\qquad \forall r,t:\quad P(r,t)=P(r)\cdot P(t|r)$</p>
+<p>Eliminate: $\qquad \text{Sum }R, \quad P(R,T)\Rightarrow P(T)$ </p>
 ]]></content>
       <categories>
         <category>Courses</category>

@@ -92,7 +92,8 @@
 <meta property="og:image" content="https://i.loli.net/2020/09/21/7TB2lp1vftKNXGm.png">
 <meta property="og:image" content="https://i.loli.net/2020/09/22/3y7GiU6PjZwueCV.jpg">
 <meta property="og:image" content="https://i.loli.net/2020/09/22/2Ty7feC6YQXn5SP.png">
-<meta property="og:updated_time" content="2020-09-22T04:56:42.834Z">
+<meta property="og:image" content="https://i.loli.net/2020/10/23/VrkhDZwtIc31WKX.png">
+<meta property="og:updated_time" content="2020-10-23T09:16:55.945Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CS181">
 <meta name="twitter:description" content="CS181 Artificial Intelligence">
@@ -427,7 +428,7 @@
 <td>$\sqrt{}$</td>
 <td>x</td>
 <td>$O(b^s)$</td>
-<td>$O(b^m)$</td>
+<td>$O(b^s)$</td>
 <td>Queue</td>
 </tr>
 <tr>
@@ -485,6 +486,17 @@ O(d^n) \rightarrow O((\frac{n}{c})d^{c})</script><p>Time cost from expo to linea
 <p><strong>Minimax Pruning*</strong><br><img src="https://i.loli.net/2020/09/22/3y7GiU6PjZwueCV.jpg" alt="Minimax Pruning.jpeg"></p>
 <h4 id="Alpha-Beta-Pruning"><a href="#Alpha-Beta-Pruning" class="headerlink" title="Alpha-Beta Pruning"></a><font color="#4F86C6">Alpha-Beta Pruning</font></h4><p>Consider some node $n$ in the tree, if the player has better choice $m$ at the ancestor of node $n$, then $n$ will never be reached in actual play.<br><img src="https://i.loli.net/2020/09/22/2Ty7feC6YQXn5SP.png" alt="截屏2020-09-22上午11.13.31.png"></p>
 <p>$\alpha$ = highest value so far for MAX<br>$\beta$ = lowest value so far so MIN</p>
+<hr>
+<h3 id="Bayes-Nets-Exact-Inference"><a href="#Bayes-Nets-Exact-Inference" class="headerlink" title="Bayes Nets: Exact Inference"></a>Bayes Nets: Exact Inference</h3><h4 id="Inference-by-Enumeration"><a href="#Inference-by-Enumeration" class="headerlink" title="Inference by Enumeration"></a><font color="#4F86C6">Inference by Enumeration</font></h4><p><img src="https://i.loli.net/2020/10/23/VrkhDZwtIc31WKX.png" alt="bayes_graph1.png" style="zoom:50%;"></p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+P(B|j,m) &\propto_B P(B,j,m)\\
+& = \sum_{e,a}P(B,j,m,e,a) \\
+& = \sum_{e,a}P(B)P(e)P(a|B,e)P(j|a)P(m|a)\\
+& = P(B)\sum_{e}P(e)\sum_{a}P(a|B,e)P(j|a)P(m|a)
+\end{aligned}</script><h4 id="Factors"><a href="#Factors" class="headerlink" title="Factors"></a><font color="#4F86C6">Factors</font></h4><p>Factor: multi-dimensional array </p>
+<p>Join Factors: $\qquad \forall r,t:\quad P(r,t)=P(r)\cdot P(t|r)$</p>
+<p>Eliminate: $\qquad \text{Sum }R, \quad P(R,T)\Rightarrow P(T)$ </p>
 
       
     </div>
@@ -518,6 +530,10 @@ O(d^n) \rightarrow O((\frac{n}{c})d^{c})</script><p>Time cost from expo to linea
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/11/21/paper/" rel="prev" title="paper">
+                paper <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -596,7 +612,7 @@ O(d^n) \rightarrow O((\frac{n}{c})d^{c})</script><p>Time cost from expo to linea
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -607,7 +623,7 @@ O(d^n) \rightarrow O((\frac{n}{c})d^{c})</script><p>Time cost from expo to linea
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -651,7 +667,7 @@ O(d^n) \rightarrow O((\frac{n}{c})d^{c})</script><p>Time cost from expo to linea
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Search"><span class="nav-number">2.</span> <span class="nav-text">Search</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Depth-first-Search-DFS"><span class="nav-number">2.1.</span> <span class="nav-text">Depth-first Search (DFS)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Breadth-first-Searc-BFS"><span class="nav-number">2.2.</span> <span class="nav-text">Breadth-first Searc (BFS)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Iterative-Deepening"><span class="nav-number">2.3.</span> <span class="nav-text">Iterative Deepening</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Uniform-Cost-Search-UCS"><span class="nav-number">2.4.</span> <span class="nav-text">Uniform Cost Search (UCS)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Greedy-Search"><span class="nav-number">2.5.</span> <span class="nav-text">Greedy Search</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AStar-Search"><span class="nav-number">2.6.</span> <span class="nav-text">AStar Search</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Graph-Search"><span class="nav-number">2.7.</span> <span class="nav-text">Graph Search</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Constraint-Satisfaction-Problems-CSP"><span class="nav-number">3.</span> <span class="nav-text">Constraint Satisfaction Problems (CSP)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Backtracking-Search"><span class="nav-number">3.1.</span> <span class="nav-text">Backtracking Search</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Filtering"><span class="nav-number">3.2.</span> <span class="nav-text">Filtering</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Ordering"><span class="nav-number">3.3.</span> <span class="nav-text">Ordering</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Structure"><span class="nav-number">3.4.</span> <span class="nav-text">Structure</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Local-Search"><span class="nav-number">3.5.</span> <span class="nav-text">Local Search</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Adversarial-Search"><span class="nav-number">4.</span> <span class="nav-text">Adversarial Search</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Minimax"><span class="nav-number">4.1.</span> <span class="nav-text">Minimax</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Alpha-Beta-Pruning"><span class="nav-number">4.2.</span> <span class="nav-text">Alpha-Beta Pruning</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Search"><span class="nav-number">2.</span> <span class="nav-text">Search</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Depth-first-Search-DFS"><span class="nav-number">2.1.</span> <span class="nav-text">Depth-first Search (DFS)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Breadth-first-Searc-BFS"><span class="nav-number">2.2.</span> <span class="nav-text">Breadth-first Searc (BFS)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Iterative-Deepening"><span class="nav-number">2.3.</span> <span class="nav-text">Iterative Deepening</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Uniform-Cost-Search-UCS"><span class="nav-number">2.4.</span> <span class="nav-text">Uniform Cost Search (UCS)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Greedy-Search"><span class="nav-number">2.5.</span> <span class="nav-text">Greedy Search</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AStar-Search"><span class="nav-number">2.6.</span> <span class="nav-text">AStar Search</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Graph-Search"><span class="nav-number">2.7.</span> <span class="nav-text">Graph Search</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Constraint-Satisfaction-Problems-CSP"><span class="nav-number">3.</span> <span class="nav-text">Constraint Satisfaction Problems (CSP)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Backtracking-Search"><span class="nav-number">3.1.</span> <span class="nav-text">Backtracking Search</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Filtering"><span class="nav-number">3.2.</span> <span class="nav-text">Filtering</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Ordering"><span class="nav-number">3.3.</span> <span class="nav-text">Ordering</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Structure"><span class="nav-number">3.4.</span> <span class="nav-text">Structure</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Local-Search"><span class="nav-number">3.5.</span> <span class="nav-text">Local Search</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Adversarial-Search"><span class="nav-number">4.</span> <span class="nav-text">Adversarial Search</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Minimax"><span class="nav-number">4.1.</span> <span class="nav-text">Minimax</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Alpha-Beta-Pruning"><span class="nav-number">4.2.</span> <span class="nav-text">Alpha-Beta Pruning</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Bayes-Nets-Exact-Inference"><span class="nav-number">5.</span> <span class="nav-text">Bayes Nets: Exact Inference</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Inference-by-Enumeration"><span class="nav-number">5.1.</span> <span class="nav-text">Inference by Enumeration</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Factors"><span class="nav-number">5.2.</span> <span class="nav-text">Factors</span></a></li></ol></li></ol></div>
             
 
           </div>
