@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>paper</title>
-    <url>/2020/11/21/paper/</url>
+    <title>WuRX</title>
+    <url>/2020/11/22/WuRX/</url>
+    <content><![CDATA[<p>&emsp; Abstract: In this paper, we present an always-on ultra-low power (ULP) wake-up receiver (WuRx) that constantly listens to the channel. We propose a <font color="blue">two-phase WuRx architecture</font> resulting in a 12% reduction in the average power consumption compared to conventional single-phase architectures. The first phase detects the existence of a signal and triggers the second phase responsible for signature detection. A CMOS integrable <font color="blue">Schottky diode</font> is proposed for power detection utilizing passive gain from impedance matching network. In the second phase, we propose a novel, low power data-locked startable oscillator to correlate the received data with predefined signature, which avoids the use of power-hungry crystal oscillator and features 1nW/kHz efficiency. The proposed system operates at 750MHz and achieves a low wake-up latency of 200μs, a -50dBm sensitivity at a data rate of 200 kbps, a 1.69 μW average power and achieves a FOM$\sim$8.5pJ/bit. The system is implemented in 65nm CMOS technology and occupies an area of 1mm×0.75mm.</p>
+<p>Schottky Diodes: 导通电压很低，正常二极管在0.6-0.7V, Schottky diodes在0.15-0.45V, switching很快<br>FOM: figure of merits; usually consider energy per bit and wake-up latency<br>ULP: ultra-low power<br>OOK: on-off keying, 是否存在载波<br>VGA: variable gain amplifier</p>
+<h3 id="Architecture"><a href="#Architecture" class="headerlink" title="Architecture"></a>Architecture</h3><p><img src="https://i.loli.net/2020/11/22/dgaNp6ksjcwym1A.png" alt="Fig2.png"></p>
+<h4 id="Phase-I"><a href="#Phase-I" class="headerlink" title="Phase-I"></a>Phase-I</h4><p>Phase one detects the existance of a signal, always ON.</p>
+<h4 id="Phase-II"><a href="#Phase-II" class="headerlink" title="Phase-II"></a>Phase-II</h4><p>Phase two is responsible of r signature detection.</p>
+<p>SOS看不懂</p>
+]]></content>
+      <categories>
+        <category>Paper</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>WuRX_Pesudo-BalunED</title>
+    <url>/2020/11/21/WuRX_PesudoBalunED/</url>
     <content><![CDATA[<p>&emsp; Abstract: A 402-405 MHz MICS-band wake-up receiver is presented that achieves −63.8dBm sensitivity at 4.5nW. High sensitivity at 400MHz is accomplished via an 18.5dB passive voltage gain transformer filter loaded by a high input impedance ($R_{in} &gt; 30 k\Omega$), high <font color="red">scaling factor</font> ($k_{ED} &gt; 300$), 1.8 nW current re-use <font color="red">pseudo-balun envelope detector</font>, while low power is achieved by operating all active circuits, including the <font color="red">re-generative comparator, baseband correlator, and temperature compensated relaxation oscillator</font> in sub-threshold with a single 0.4 V supply. The chip is fabricated using 0.18 μm CMOS SOI process and achieves the highest figure of merit of all direct envelope detection-based wake-up receivers operating above 400 MHz.</p>
-<p>RF: Radio Frequency<br>MICS: Medical Implant Communication Systems, core band 402-405MHz<br>WuRXs: Wake-up Receivers</p>
+<p>RF: Radio Frequency<br>MICS: Medical Implant Communication Systems, core band 402-405MHz<br>WuRXs: Wake-up Receivers<br>ED: Envelope Detector<br>LO: Local Oscillator</p>
 <h3 id="Comparison"><a href="#Comparison" class="headerlink" title="Comparison:"></a>Comparison:</h3><ul>
 <li>WuRXs at nW power level have been reported, however with moderate sensitivity.</li>
 <li>Prior work has achieved excellent sensitivity at nW power levels, however limited to 113.5MHz (low frequency).</li>
 <li>This paper presents the design of a WuRX featuring an active pseudo-balun ED. This new ED has higher input resistance, lower input capacitance, and higher conversion gain via a current re-use common gate (CG) architecture facilitating the design of a high passive gain RF transformer filter at 400 MHz.</li>
 </ul>
 <h3 id="Design-Description"><a href="#Design-Description" class="headerlink" title="Design Description"></a>Design Description</h3><p><img src="https://i.loli.net/2020/11/22/mEl4sNtoFd5MzUT.png" alt="Figure.1" style="zoom:67%;"></p>
-<h4 id="Transformer"><a href="#Transformer" class="headerlink" title="Transformer"></a>Transformer</h4><p>Primary and secondary stages resonate at the same center frequency, imdedance transformation, $\Rightarrow$ passive voltage gain<br>The passive voltage gain is limited by $L_s$(should large) and $R_{in}$(should small).</p>
+<h4 id="Transformer"><a href="#Transformer" class="headerlink" title="Transformer"></a>Transformer</h4><p>Primary and secondary stages resonate at the same center frequency, imdedance transformation, $\Rightarrow$ passive voltage gain<br>The passive voltage gain is limited by $L_s$(should large) and $R_{in}$(should small). ($R_{in}$: ED input resistance)<br>But, need to size the ED transistors large enought to minimize the effect of $1/f$ noise at baseband given the low data rate of the WuRX.</p>
 ]]></content>
       <categories>
         <category>Paper</category>

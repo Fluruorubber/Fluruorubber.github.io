@@ -81,15 +81,15 @@
 
 <meta name="description" content="A 400MHz 4.5nW −63.8dBm Sensitivity Wake-up Receiver Employing an Active Pseudo-Balun Envelope Detector.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="paper">
-<meta property="og:url" content="http://yoursite.com/2020/11/21/paper/index.html">
+<meta property="og:title" content="WuRX_Pesudo-BalunED">
+<meta property="og:url" content="http://yoursite.com/2020/11/21/WuRX_PesudoBalunED/index.html">
 <meta property="og:site_name" content="--Fluruorubber--">
 <meta property="og:description" content="A 400MHz 4.5nW −63.8dBm Sensitivity Wake-up Receiver Employing an Active Pseudo-Balun Envelope Detector.">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://i.loli.net/2020/11/22/mEl4sNtoFd5MzUT.png">
-<meta property="og:updated_time" content="2020-11-22T04:42:50.120Z">
+<meta property="og:updated_time" content="2020-11-22T05:32:03.862Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="paper">
+<meta name="twitter:title" content="WuRX_Pesudo-BalunED">
 <meta name="twitter:description" content="A 400MHz 4.5nW −63.8dBm Sensitivity Wake-up Receiver Employing an Active Pseudo-Balun Envelope Detector.">
 <meta name="twitter:image" content="https://i.loli.net/2020/11/22/mEl4sNtoFd5MzUT.png">
 
@@ -121,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/11/21/paper/">
+  <link rel="canonical" href="http://yoursite.com/2020/11/21/WuRX_PesudoBalunED/">
 
 
 
 
 
-  <title>paper | --Fluruorubber--</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>WuRX_Pesudo-BalunED | --Fluruorubber--</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -286,7 +286,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/11/21/paper/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/11/21/WuRX_PesudoBalunED/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Fluruorubber">
@@ -303,7 +303,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">paper</h1>
+          <h1 class="post-title" itemprop="name headline">WuRX_Pesudo-BalunED</h1>
         
 
         <div class="post-meta">
@@ -380,14 +380,14 @@
 
       
         <p>&emsp; Abstract: A 402-405 MHz MICS-band wake-up receiver is presented that achieves −63.8dBm sensitivity at 4.5nW. High sensitivity at 400MHz is accomplished via an 18.5dB passive voltage gain transformer filter loaded by a high input impedance ($R_{in} &gt; 30 k\Omega$), high <font color="red">scaling factor</font> ($k_{ED} &gt; 300$), 1.8 nW current re-use <font color="red">pseudo-balun envelope detector</font>, while low power is achieved by operating all active circuits, including the <font color="red">re-generative comparator, baseband correlator, and temperature compensated relaxation oscillator</font> in sub-threshold with a single 0.4 V supply. The chip is fabricated using 0.18 μm CMOS SOI process and achieves the highest figure of merit of all direct envelope detection-based wake-up receivers operating above 400 MHz.</p>
-<p>RF: Radio Frequency<br>MICS: Medical Implant Communication Systems, core band 402-405MHz<br>WuRXs: Wake-up Receivers</p>
+<p>RF: Radio Frequency<br>MICS: Medical Implant Communication Systems, core band 402-405MHz<br>WuRXs: Wake-up Receivers<br>ED: Envelope Detector<br>LO: Local Oscillator</p>
 <h3 id="Comparison"><a href="#Comparison" class="headerlink" title="Comparison:"></a>Comparison:</h3><ul>
 <li>WuRXs at nW power level have been reported, however with moderate sensitivity.</li>
 <li>Prior work has achieved excellent sensitivity at nW power levels, however limited to 113.5MHz (low frequency).</li>
 <li>This paper presents the design of a WuRX featuring an active pseudo-balun ED. This new ED has higher input resistance, lower input capacitance, and higher conversion gain via a current re-use common gate (CG) architecture facilitating the design of a high passive gain RF transformer filter at 400 MHz.</li>
 </ul>
 <h3 id="Design-Description"><a href="#Design-Description" class="headerlink" title="Design Description"></a>Design Description</h3><p><img src="https://i.loli.net/2020/11/22/mEl4sNtoFd5MzUT.png" alt="Figure.1" style="zoom:67%;"></p>
-<h4 id="Transformer"><a href="#Transformer" class="headerlink" title="Transformer"></a>Transformer</h4><p>Primary and secondary stages resonate at the same center frequency, imdedance transformation, $\Rightarrow$ passive voltage gain<br>The passive voltage gain is limited by $L_s$(should large) and $R_{in}$(should small).</p>
+<h4 id="Transformer"><a href="#Transformer" class="headerlink" title="Transformer"></a>Transformer</h4><p>Primary and secondary stages resonate at the same center frequency, imdedance transformation, $\Rightarrow$ passive voltage gain<br>The passive voltage gain is limited by $L_s$(should large) and $R_{in}$(should small). ($R_{in}$: ED input resistance)<br>But, need to size the ED transistors large enought to minimize the effect of $1/f$ noise at baseband given the low data rate of the WuRX.</p>
 
       
     </div>
@@ -421,6 +421,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/11/22/WuRX/" rel="prev" title="WuRX">
+                WuRX <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -499,7 +503,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
