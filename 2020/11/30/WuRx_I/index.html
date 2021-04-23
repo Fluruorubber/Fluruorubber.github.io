@@ -79,19 +79,23 @@
 
 
 
-<meta name="description" content="A 400MHz 4.5nW −63.8dBm Sensitivity Wake-up Receiver Employing an Active Pseudo-Balun Envelope Detector.">
+<meta name="description" content="论文阅读笔记，wakeup radio相关">
 <meta property="og:type" content="article">
-<meta property="og:title" content="WuRX_Pesudo-BalunED">
-<meta property="og:url" content="http://yoursite.com/2020/11/21/WuRX_PesudoBalunED/index.html">
+<meta property="og:title" content="WuRX_I">
+<meta property="og:url" content="http://yoursite.com/2020/11/30/WuRx_I/index.html">
 <meta property="og:site_name" content="--Fluruorubber--">
-<meta property="og:description" content="A 400MHz 4.5nW −63.8dBm Sensitivity Wake-up Receiver Employing an Active Pseudo-Balun Envelope Detector.">
+<meta property="og:description" content="论文阅读笔记，wakeup radio相关">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://i.loli.net/2020/11/22/mEl4sNtoFd5MzUT.png">
-<meta property="og:updated_time" content="2020-11-22T05:32:03.862Z">
+<meta property="og:image" content="https://i.loli.net/2020/11/30/MPwlN8kqn5pmgAF.png">
+<meta property="og:image" content="https://i.loli.net/2020/11/30/cel5MjAIsd9X4Ha.png">
+<meta property="og:image" content="https://i.loli.net/2020/12/14/ANbeZHwlPhW2sOo.png">
+<meta property="og:image" content="https://i.loli.net/2020/12/20/3gR1FZ2bdJaXHuo.png">
+<meta property="og:image" content="https://i.loli.net/2020/12/20/usQPIHazXtDMyUB.png">
+<meta property="og:updated_time" content="2021-03-18T02:42:15.733Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="WuRX_Pesudo-BalunED">
-<meta name="twitter:description" content="A 400MHz 4.5nW −63.8dBm Sensitivity Wake-up Receiver Employing an Active Pseudo-Balun Envelope Detector.">
-<meta name="twitter:image" content="https://i.loli.net/2020/11/22/mEl4sNtoFd5MzUT.png">
+<meta name="twitter:title" content="WuRX_I">
+<meta name="twitter:description" content="论文阅读笔记，wakeup radio相关">
+<meta name="twitter:image" content="https://i.loli.net/2020/11/30/MPwlN8kqn5pmgAF.png">
 
 
 
@@ -121,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/11/21/WuRX_PesudoBalunED/">
+  <link rel="canonical" href="http://yoursite.com/2020/11/30/WuRx_I/">
 
 
 
 
 
-  <title>WuRX_Pesudo-BalunED | --Fluruorubber--</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>WuRX_I | --Fluruorubber--</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -286,7 +290,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/11/21/WuRX_PesudoBalunED/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/11/30/WuRx_I/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Fluruorubber">
@@ -303,7 +307,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">WuRX_Pesudo-BalunED</h1>
+          <h1 class="post-title" itemprop="name headline">WuRX_I</h1>
         
 
         <div class="post-meta">
@@ -315,8 +319,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-11-21T23:29:03+08:00">
-                2020-11-21
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-11-30T13:31:06+08:00">
+                2020-11-30
               </time>
             
 
@@ -362,7 +366,7 @@
 
           
               <div class="post-description">
-                  A 400MHz 4.5nW −63.8dBm Sensitivity Wake-up Receiver Employing an Active Pseudo-Balun Envelope Detector.
+                  论文阅读笔记，wakeup radio相关
               </div>
           
 
@@ -379,15 +383,48 @@
       
 
       
-        <p>&emsp; Abstract: A 402-405 MHz MICS-band wake-up receiver is presented that achieves −63.8dBm sensitivity at 4.5nW. High sensitivity at 400MHz is accomplished via an 18.5dB passive voltage gain transformer filter loaded by a high input impedance ($R_{in} &gt; 30 k\Omega$), high <font color="red">scaling factor</font> ($k_{ED} &gt; 300$), 1.8 nW current re-use <font color="red">pseudo-balun envelope detector</font>, while low power is achieved by operating all active circuits, including the <font color="red">re-generative comparator, baseband correlator, and temperature compensated relaxation oscillator</font> in sub-threshold with a single 0.4 V supply. The chip is fabricated using 0.18 μm CMOS SOI process and achieves the highest figure of merit of all direct envelope detection-based wake-up receivers operating above 400 MHz.</p>
-<p>RF: Radio Frequency<br>MICS: Medical Implant Communication Systems, core band 402-405MHz<br>WuRXs: Wake-up Receivers<br>ED: Envelope Detector<br>LO: Local Oscillator</p>
-<h3 id="Comparison"><a href="#Comparison" class="headerlink" title="Comparison:"></a>Comparison:</h3><ul>
-<li>WuRXs at nW power level have been reported, however with moderate sensitivity.</li>
-<li>Prior work has achieved excellent sensitivity at nW power levels, however limited to 113.5MHz (low frequency).</li>
-<li>This paper presents the design of a WuRX featuring an active pseudo-balun ED. This new ED has higher input resistance, lower input capacitance, and higher conversion gain via a current re-use common gate (CG) architecture facilitating the design of a high passive gain RF transformer filter at 400 MHz.</li>
-</ul>
-<h3 id="Design-Description"><a href="#Design-Description" class="headerlink" title="Design Description"></a>Design Description</h3><p><img src="https://i.loli.net/2020/11/22/mEl4sNtoFd5MzUT.png" alt="Figure.1" style="zoom:67%;"></p>
-<h4 id="Transformer"><a href="#Transformer" class="headerlink" title="Transformer"></a>Transformer</h4><p>Primary and secondary stages resonate at the same center frequency, imdedance transformation, $\Rightarrow$ passive voltage gain<br>The passive voltage gain is limited by $L_s$(should large) and $R_{in}$(should small). ($R_{in}$: ED input resistance)<br>But, need to size the ED transistors large enought to minimize the effect of $1/f$ noise at baseband given the low data rate of the WuRX.</p>
+        <h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p>Wakeup receiver解决无线通信收发机待机功耗太大的问题。很多场景下，不知道什么时候需要通信，让收发机一直开着费电，因此做一个低功耗的wake up receiver，保持监视状态，当检测到特定的口令时候，发出一个信号，唤醒收发机。</p>
+<p>常见的工程优化思路——任务分解，每部分有专门的硬件，针对特定的任务进行优化，最后获得整体性能优势。这里就是将待机这一功能分解出来，专门定制硬件，用来降低功耗。牺牲速度换取功耗的极端特例。</p>
+<h3 id="Feature"><a href="#Feature" class="headerlink" title="Feature"></a>Feature</h3><p>超低功耗：保持长时间待机</p>
+<p>极低的数据率：不需要用来传递信息，只需要识别特定的pattern，发出一个唤醒信号；</p>
+<p>灵敏度要求：有一定的灵敏度，保证唤醒的robustness和足够的工作距离。</p>
+<p>可以使用最简单的调制方式。OOK，包络简波。</p>
+<p>ASK (Amplitude Shift Keying)：例如二进制的，用不同的幅度来表示0和1.</p>
+<h3 id="2020-11-30"><a href="#2020-11-30" class="headerlink" title="2020/11/30"></a>2020/11/30</h3><center><b>A 116nW Multi-Band Wake-Up Receiver with 31-bit Correlator and Interference Rejection</b></center>
+
+<center><b>Seunghyun Oh, Nathan E. Roberts, and David D. Wentzloff,  University of Michigan</b></center>
+
+<center><b>2013 cicc</b></center>
+
+<p>Abstract: This paper presents a 116nW wake-up radio complete with crystal reference, interference compensation, and baseband processing, such that a selectable 31-bit code is required to toggle a wake-up signal. The front-end operates over a broad frequency range, tuned by an off-chip band- select filter and matching network, and is demonstrated in the 402-405MHz MICS band and the 915MHz and 2.4GHz ISM bands with sensitivities of -45.5dBm, -43.4dBm, and -43.2dBm, respectively. Additionally, the baseband processor implements automatic threshold feedback to detect the presence of interferers and dynamically adjust the receiver’s sensitivity, mitigating the jamming problem inherent to previous energy-detection wake-up radios. The wake-up radio has a raw OOK chip-rate of 12.5kbps, an active area of 0.35$mm^2$ and operates using a 1.2V supply for the crystal reference and RF demodulation, and a 0.5V supply for subthreshold baseband processing.</p>
+<p><img src="https://i.loli.net/2020/11/30/MPwlN8kqn5pmgAF.png" alt="截屏2020-11-30下午11.30.31.png"></p>
+<p>Off-chip matching network</p>
+<p>RF rectifier:<br>&emsp; traditional的方法，LNA+mixer，但是功耗比较大。wurx数据传输量比较小(几十个bits)，用整流器来代替。比如有时候会用二极管，square law behavior, $(\cos a + \cos b)^2$最后能得到$\cos (a-b)$. 这个paper用了30stage，实际不是很好(?)，比较老的文章。All transistors operate in the sub-threshold region (at low Rx power levels). This subthreshold rectifier uses zero-threshold transistors and 30 stages to achieve sufficient RF gain with fast charging time.</p>
+<p><img src="https://i.loli.net/2020/11/30/cel5MjAIsd9X4Ha.png" alt="截屏2020-11-30下午11.54.59.png"></p>
+<p>&emsp; rectifier的工作原理，比如只看其中一个stage进行分析。A点sinusoidal，for simplicity 假设为$\pm 1$的方波。假设两个MOS管都是$V_{th} = 0$。当A为-1V时，MOS管导通，B接到地上为0V。当A变为1V时，因为电容两侧电压差恒定，B点0V$\rightarrow$2V，于是C点也变为2V。通过多级连接实现整流放大的功能。</p>
+<p>Crystal oscillator:</p>
+<p><strong>comparator with ATC</strong> (Automatic Threshold Controller):</p>
+<p>&emsp; 主要创新点。编码后0 1个数差不多。</p>
+<p><img src="https://i.loli.net/2020/12/14/ANbeZHwlPhW2sOo.png" alt="ATC.png"></p>
+<p>2021/03/18重读：</p>
+<p>Introduction部分：wireless sensor nodes的sleep power在nW量级，wakeup receiver的active功耗需要比这个更小。一种降低功耗的方法是降低sensitivity，用做短距离传输</p>
+<h3 id="2020-12-14"><a href="#2020-12-14" class="headerlink" title="2020/12/14"></a>2020/12/14</h3><p>2.4GHz (ISM, Industrial Scientific Medical Band); 915MHz</p>
+<p>402-405MHz, MICS band</p>
+<p>433MHz</p>
+<center><b>A 0.42nW 434MHz -79.1dBm Wake-Up Receiver with a Time-Domain Integrator </b></center>
+
+<center><b>Vivek Mangal, Peter R. Kinget, Columbia University, New York, NY </b></center>
+
+<center><b>2009 ISSCC</b></center>
+
+<p>解析：</p>
+<p>输入通过片外高Q的大电感选频，一方面把输入阻抗匹配到天线所需要的阻抗，一方面在阻抗转换的同时提供一定的电压增益。matching network之后经过二极管接法的晶体管检波（利用晶体管的非线性）。检波基本去掉了本振，变成低频信号，由中频放大器放大。</p>
+<p>因为二极管检波通常会放进来很多噪声，一般在中频放大器之后，需要进行低通滤波器提高信噪比。这里用了两个<strong>压控振荡器</strong>来作为积分器代替低通滤波（本质上压控振荡器是把电压域信号转换到时域）。压控振荡器将电压转为频率信号，所以只需要一个PFD去比较信号通路和参考通路的相位，即可实现与电压域的比较器类似的功能。</p>
+<p>优点：1. 面积小，因为用RC滤波器把带宽压低（～100Hz），RC的值不会小。2. 容易控制。VCO的相位可以很快重置，而不用等待一个很长的电容充放电时间。这样可以实现一定窗口的积分，在积分到最大值之后采样，采样完马上重置进入下一个比特的积分。这样类似于匹配滤波，一定程度上可以增强信噪比。</p>
+<p>接收机收到一组01数据串，它并不知道每个比特是从什么时间开始的，那如何选择窗口积分的开始时间结束时间呢以及采样时间呢？<strong>在高性能的接收机里，这一部分往往是由时钟数据环路（CDR）来确定的，</strong>通过环路反馈让每次采样在信噪比最大的点上。在wake up receiver里面，功耗预算无法负担一个时钟数据环路。这种情况下，<strong>解决方式一般是过采样，</strong>这篇采用了2x的过采样。在每个比特里面采样两个点，会稍稍牺牲一点信噪比（每个采样点对应的积分时间变短了），但总有一个能采在比较好的位置上，后面再通过一些数字逻辑抛弃掉不好的采样点。这篇文章的采样率是200Hz。</p>
+<p><strong>过采样和CDR都能解决采样时隙对齐的问题，但在不同的应用里会选择不同的技术方案。</strong>在高速串口里，大家都在拼极限数据率，过采样是不可能的，所以肯定要用CDR，而且其本身功耗一般都已经比较大。</p>
+<p><img src="https://i.loli.net/2020/12/20/3gR1FZ2bdJaXHuo.png" alt="图片 21.png"></p>
+<p><img src="https://i.loli.net/2020/12/20/usQPIHazXtDMyUB.png" alt="图片 1.png"></p>
 
       
     </div>
@@ -422,8 +459,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/11/22/WuRX/" rel="prev" title="WuRX">
-                WuRX <i class="fa fa-chevron-right"></i>
+              <a href="/2021/04/23/Hardware Accelerators/" rel="prev" title="Hardware Accelerators">
+                Hardware Accelerators <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -558,7 +595,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Comparison"><span class="nav-number">1.</span> <span class="nav-text">Comparison:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Design-Description"><span class="nav-number">2.</span> <span class="nav-text">Design Description</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Transformer"><span class="nav-number">2.1.</span> <span class="nav-text">Transformer</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Feature"><span class="nav-number">2.</span> <span class="nav-text">Feature</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2020-11-30"><span class="nav-number">3.</span> <span class="nav-text">2020/11/30</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2020-12-14"><span class="nav-number">4.</span> <span class="nav-text">2020/12/14</span></a></li></ol></div>
             
 
           </div>
@@ -578,7 +615,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
