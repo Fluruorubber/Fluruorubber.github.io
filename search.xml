@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Introduction to Microelectronic Fabrication</title>
+    <url>/2021/10/09/Introduction-to-Microelectronic-Fabrication/</url>
+    <content><![CDATA[<h3 id="An-overview-of-processes-and-structures"><a href="#An-overview-of-processes-and-structures" class="headerlink" title="An overview of processes and structures"></a>An overview of processes and structures</h3><p>Why silicon?<br>    Silicon can easily be oxidized to form a high-quality electronical insulator, and this oxide layer also provides an excellent barrier layer for the selective diffustion steps needed in integrated-circuit fabrication.<br>    Ancillary advantages: abudanant element in nature, providing the possibility of a low-cost starting material; a wider bandgap than germanium and can therefore operate at higher temperatures than germanium.</p>
+<p>The n-channel MOS transistor is formed in a p-type substrate. Source/drain regions are formed by selectively converting shallow regions at the surface to n-type material. Thin and thick silicon-dioxide regions on the surface form the gate insulator of the transistor and serve to isolate one device from another. A thin film of polysilicon is used to form the gate of the transistor, and a metal such as aluminum is used to make contact to the source and drain. Interconnects between devices can be made using the diffusions and the layer of polysilicon and metal.</p>
+<p>Processing steps:</p>
+<pre><code>- Oxidation
+- Photolithography
+- Ethching
+- Diffusion
+- Evaporation or sputtering
+- Chemical vapor deposition (CVD)
+- Ion implantation
+- Epitaxy
+- Annealing
+</code></pre>]]></content>
+  </entry>
+  <entry>
     <title>Hardware Accelerators</title>
     <url>/2021/04/23/Hardware%20Accelerators/</url>
     <content><![CDATA[<p>Conditional: RTL-based synthesis flow</p>
