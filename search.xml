@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Struggle_Everyday</title>
+    <url>/2021/10/10/Struggle_Everyday/</url>
+    <content><![CDATA[<h3 id="Vegetables"><a href="#Vegetables" class="headerlink" title="Vegetables:"></a>Vegetables:</h3><p>cilantro 香菜 (不是parsley)<br>enoki mushroom 金针菇<br>cauliflower 花菜<br>broccoli 西兰花<br>celery 芹菜</p>
+<h3 id="Fruit"><a href="#Fruit" class="headerlink" title="Fruit"></a>Fruit</h3><p>persimmon 柿子<br>tangelo 橘子（丑八怪）<br>mandarins 柑橘<br>cantaloupe 哈密瓜<br>pomegranate 石榴</p>
+<h3 id="Home"><a href="#Home" class="headerlink" title="Home"></a>Home</h3><p>sesame oil 芝麻油</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Introduction to Microelectronic Fabrication</title>
     <url>/2021/10/09/Introduction-to-Microelectronic-Fabrication/</url>
-    <content><![CDATA[<h3 id="An-overview-of-processes-and-structures"><a href="#An-overview-of-processes-and-structures" class="headerlink" title="An overview of processes and structures"></a>An overview of processes and structures</h3><p>Why silicon?<br>    Silicon can easily be oxidized to form a high-quality electronical insulator, and this oxide layer also provides an excellent barrier layer for the selective diffustion steps needed in integrated-circuit fabrication.<br>    Ancillary advantages: abudanant element in nature, providing the possibility of a low-cost starting material; a wider bandgap than germanium and can therefore operate at higher temperatures than germanium.</p>
+    <content><![CDATA[<h3 id="An-overview-of-processes-and-structures"><a href="#An-overview-of-processes-and-structures" class="headerlink" title="An overview of processes and structures"></a>An overview of processes and structures</h3><p>Why silicon?<br>    &emsp; Silicon can easily be oxidized to form a high-quality electronical insulator, and this oxide layer also provides an excellent barrier layer for the selective diffustion steps needed in integrated-circuit fabrication.<br>    &emsp; Ancillary advantages: abundant element in nature, providing the possibility of a low-cost starting material; a wider bandgap than germanium and can therefore operate at higher temperatures than germanium.</p>
 <p>The n-channel MOS transistor is formed in a p-type substrate. Source/drain regions are formed by selectively converting shallow regions at the surface to n-type material. Thin and thick silicon-dioxide regions on the surface form the gate insulator of the transistor and serve to isolate one device from another. A thin film of polysilicon is used to form the gate of the transistor, and a metal such as aluminum is used to make contact to the source and drain. Interconnects between devices can be made using the diffusions and the layer of polysilicon and metal.</p>
 <p>Processing steps:</p>
 <pre><code>- Oxidation
@@ -15,7 +23,33 @@
 - Ion implantation
 - Epitaxy
 - Annealing
-</code></pre>]]></content>
+</code></pre><h3 id="Lithography"><a href="#Lithography" class="headerlink" title="Lithography"></a>Lithography</h3><p>Masks contain the pattern of windows that are transferred to the surface of the silicon wafer using a process called photolithography.<br>The patterns are first transferred from the mask to a light-sensitive material called photoresist.<br>Chemical or plasma etching is then used to transfer the pattern from the photoresist to the barrier material on the surface of the wafer.</p>
+<h4 id="The-photolithography-process"><a href="#The-photolithography-process" class="headerlink" title="The photolithography process"></a>The photolithography process</h4><p>Steps:</p>
+<pre><code>- Clean wafers
+- Deposit barrier layer SiO2, Si3N4, metal
+- Coat with photoresist
+- Soft bake
+- Align masks
+- Expose pattern
+- Develop photoresist
+- Hard bake
+- Etch windows in barrier layer
+- Remove photoresist
+</code></pre><p>Wafer Cleaning:<br>    &emsp; The wafer range in thickness from 250 to 500um.<br>    &emsp; Prior to use, wafers are chemically cleaned to remove particulate matter on the surface, as well as any trace of organic, ionic, and metallic impurities.</p>
+<pre><code>- HF: remove oxide
+- DI water: remove all traces of ionic, particulate, and bacterial contamination
+- HCl: heavy metal cleaning
+</code></pre><p>Barrier Layer Formation:<br>    &emsp; Most common material that serve as a barrier layer: Silicon dioxide(SiO2), Silicon nitride(Si3N4), polysilicon, photoresist, metals.<br>    &emsp; The original silicon wafer has a metallic gray appearance. Once an SiO2 layer is formed on the silicon wafer, the surface will have a color that depends on the SiO2 thickness (colorful).</p>
+<p>Photoresist Application:<br>    &emsp; The surface must be clean and dry to ensure good photoresist adhesion.<br>    &emsp; In order to promote adhesion, the wafer surface is treated with an adhesion promoter such as hexamethyldisilazane(HMDS) prior to photoresist application.<br>    &emsp; The actual thickness of the resist depends on its viscosity and is inversely proportional to the square root of the spinning speed.</p>
+<p>Soft baking or prebaking:<br>    &emsp; Soft baking, or prebaking, is used to improve adhesion and remove solvent from the photoresist. After soft baking, the photoresist is ready for mask alignment and exposure.</p>
+<p>Mask Alignment:<br>    &emsp; Mask is a square glass plate with a patterned emulsion or metal film on one side.</p>
+<p>Photoresist Exposure and Development:<br>    &emsp; Following alignment, the photoresist is exposed through the mask with hight-density ultraviolet light.<br>    &emsp; In the photoresist development, any positive resist that has been exposed to ultraviolet light is washed away. A negative resist remains on the surface wherever it is exposed.</p>
+<p>Hard baking:<br>    &emsp; Following exposure and development, a baking step is used to harden the photoresist and improve adhersion to the substrate.</p>
+<h4 id="Etching-Techniques"><a href="#Etching-Techniques" class="headerlink" title="Etching Techniques"></a>Etching Techniques</h4><p>Chemical etching in liquid or gaseous form is used to remove any barrier material not protected by hardened photoresist. A high degree of selectivity is required so that the etchant will remove the unprotected barrier layer much more rapidly than it attacks the photoresist layer.</p>
+<p>Wet Chemical Etching<br>    &emsp; Buffered Oxide Etch (BOE) is a solution containing hydrofluoric acid (HF). HF etches silicon dioxide much more rapidly than it etches photoresist or silicon. Etch rate depends on the desity of the silicon dioxide film, temperature, the type of oxide present.<br>    &emsp; A high concentration of phosphorus in the oxide enhances the etch rate, whereas a high concentration of boron reduces etch rate.<br>    &emsp; Wet chemical etching tends to be an isotropic process. The etching process etches under the resist by a distance equal to the thickess of the film.</p>
+<p>Dry Etching Plasma Systems:<br>    &emsp; Highly anisotropic etching profiles can be obtained, avoiding the undercutting problem of wet processes. Dry processes require only small amounts of reactant gases, whereas wet etching requires disposal of relatively large amounts liquid chemical wastes.<br>    &emsp; Reactive-ion etching (RIE) combines the plasma and sputter etching processes. Plasma systems are used to ionize reactive gases, and the ions are accelerated to bombard the surface. </p>
+<p>Photoresist Removal:<br>    &emsp; Photoresist removal typically uses proprietary-liquid resist strippers, which cause the resist to swell and lose adhesion to the substrate. Dry processing may also be used to remove resist by oxidizing(burning) it in an oxygen plasma system, a process often called resist ashing.</p>
+]]></content>
   </entry>
   <entry>
     <title>Hardware Accelerators</title>
